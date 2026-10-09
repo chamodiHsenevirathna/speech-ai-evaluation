@@ -1,0 +1,2 @@
+recording_id,annotator_timestamp_sec,whisper_outcome,manually_heard_token,whisper_token,normalized_token_in_vocabulary,matched_word_start,matched_word_end,punctuation_context,segment_boundary,previous_word_gap_sec
+controlled_01,0.1,omitted,um,,n/a,0.0,1.12,none,true,n/a

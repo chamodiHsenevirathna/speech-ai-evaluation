@@ -1,0 +1,542 @@
+[
+  {
+    "id": "CASE-01",
+    "category": [
+      "strong_structure",
+      "clear_conclusion"
+    ],
+    "prompt": "Describe a time you had to learn something quickly.",
+    "transcript_text": "Last year I had to learn a new reporting tool in two days before a client demo. I started by watching one short tutorial instead of reading the whole manual. For example, I only learned the three features I actually needed for the demo, and I practiced them on a sample file the night before. That approach worked because it let me focus on what mattered instead of trying to master everything at once. So my main takeaway is that learning fast means picking the smallest useful slice first.",
+    "duration_seconds": 58.0,
+    "word_count": 89,
+    "words_per_minute": 92.1,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Tests whether the coach correctly identifies an already-strong point/example/conclusion structure and does NOT recommend TECH-003 to someone who already did it well.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-02",
+    "category": [
+      "high_wpm",
+      "rushed_delivery"
+    ],
+    "prompt": "What's a skill you'd like to improve this year?",
+    "transcript_text": "I want to get better at public speaking this year because in my job I present to clients every week and I still get nervous before every single one even though I've done it dozens of times and I think the reason is I never really practiced on purpose I just sort of learned by doing it live which means I never built any real technique so this year my plan is to actually practice speaking on a schedule instead of only doing it when work forces me to and I think that will make a real difference.",
+    "duration_seconds": 32.0,
+    "word_count": 98,
+    "words_per_minute": 183.8,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "High WPM case (word_count/duration far above conversational baseline) with zero pauses and zero fillers detected. Tests TECH-001 eligibility and whether the coach avoids inferring nervousness/anxiety despite the speaker literally using the word 'nervous'.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-03",
+    "category": [
+      "slow_response",
+      "low_wpm"
+    ],
+    "prompt": "Tell me about a challenge you overcame.",
+    "transcript_text": "There was a project. It was difficult. I had to redo it twice. The client was not happy at first. I fixed the main issue. Then it was approved.",
+    "duration_seconds": 45.0,
+    "word_count": 29,
+    "words_per_minute": 38.7,
+    "long_pauses": [
+      {
+        "previous_word_end": 6.1,
+        "next_word_start": 9.8,
+        "observed_gap": 3.7,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      },
+      {
+        "previous_word_end": 18.4,
+        "next_word_start": 21.9,
+        "observed_gap": 3.5,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      }
+    ],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Low WPM with short, choppy sentences and two detected long pauses. Tests whether the coach distinguishes 'genuinely slow/hesitant delivery' from a case that might actually need more content/elaboration rather than a pacing fix.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-04",
+    "category": [
+      "fillers_present"
+    ],
+    "prompt": "Describe your ideal weekend.",
+    "transcript_text": "Um, my ideal weekend is, like, pretty simple. I usually, um, start with a slow morning, you know, coffee and no plans. Uh, then in the afternoon I try to, um, get outside for a walk or something active. And, uh, in the evening I like cooking something new.",
+    "duration_seconds": 41.0,
+    "word_count": 49,
+    "words_per_minute": 71.7,
+    "long_pauses": [],
+    "fillers": [
+      {
+        "text": "Um",
+        "category": "um",
+        "start_time": 0.0,
+        "end_time": 0.4
+      },
+      {
+        "text": "like",
+        "category": "like",
+        "start_time": 3.1,
+        "end_time": 3.3
+      },
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 6.0,
+        "end_time": 6.2
+      },
+      {
+        "text": "you know",
+        "category": "you_know",
+        "start_time": 10.2,
+        "end_time": 10.7
+      },
+      {
+        "text": "Uh",
+        "category": "uh",
+        "start_time": 15.0,
+        "end_time": 15.2
+      },
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 17.5,
+        "end_time": 17.7
+      },
+      {
+        "text": "uh",
+        "category": "uh",
+        "start_time": 24.0,
+        "end_time": 24.2
+      }
+    ],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Well above TECH-004's evidence bar (7 detections, several categories). Tests whether the coach correctly selects TECH-004 as the main improvement rather than something else.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-05",
+    "category": [
+      "no_fillers",
+      "clean_delivery"
+    ],
+    "prompt": "What does a typical workday look like for you?",
+    "transcript_text": "My typical workday starts with checking priority messages for about fifteen minutes. Then I block two hours for focused work before any meetings begin. After lunch I usually have one or two calls, and I close the day by writing a short list of tomorrow's priorities.",
+    "duration_seconds": 42.0,
+    "word_count": 46,
+    "words_per_minute": 65.7,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Clean delivery: no fillers, no pauses, reasonable WPM, reasonably structured. Tests whether the coach can identify a genuine strength as the 'what worked' section without manufacturing a 'main improvement' where the evidence doesn't clearly support one.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-06",
+    "category": [
+      "long_pauses"
+    ],
+    "prompt": "What's a decision you're proud of?",
+    "transcript_text": "I decided to switch teams two years ago. It felt risky at the time. [pause] I wasn't sure I'd be good at the new role. [pause] But I took it anyway and it worked out well.",
+    "duration_seconds": 50.0,
+    "word_count": 36,
+    "words_per_minute": 43.2,
+    "long_pauses": [
+      {
+        "previous_word_end": 12.0,
+        "next_word_start": 14.3,
+        "observed_gap": 2.3,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      },
+      {
+        "previous_word_end": 28.5,
+        "next_word_start": 31.2,
+        "observed_gap": 2.7,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      }
+    ],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Two clearly detected long pauses, no fillers. Tests TECH-001 eligibility under the 'existing pause evidence' exclusion rule (should NOT recommend more deliberate pausing on top of existing pauses) and that pause language never claims an exact duration.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-07",
+    "category": [
+      "wandering_answer",
+      "weak_focus"
+    ],
+    "prompt": "What makes a good leader?",
+    "transcript_text": "A good leader listens well. Actually that reminds me of my old manager who used to travel a lot for work, which was interesting because our whole team was remote for a while during that time and remote work has its own challenges around communication. Anyway leaders also need to make decisions quickly sometimes, and decision-making under pressure is a whole different skill from just being a good listener.",
+    "duration_seconds": 55.0,
+    "word_count": 70,
+    "words_per_minute": 76.4,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Classic topic drift: starts on-topic, drifts through an unrelated tangent, partially returns. Tests whether the coach can name the specific structural drift (quoting where it happens) rather than giving a generic 'stay focused' comment.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-08",
+    "category": [
+      "weak_conclusion"
+    ],
+    "prompt": "Why did you choose your current field?",
+    "transcript_text": "I chose this field because I liked problem-solving in school, especially math and logic puzzles. My first internship confirmed that I enjoyed the day-to-day work, not just the idea of it. And then after that I just kept going and here I am I guess.",
+    "duration_seconds": 40.0,
+    "word_count": 48,
+    "words_per_minute": 72.0,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Strong opening and middle, but the response trails off without a clear closing statement ('here I am I guess'). Tests whether the coach identifies the weak conclusion specifically, not a vaguer 'work on structure' claim.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-09",
+    "category": [
+      "strong_conclusion"
+    ],
+    "prompt": "What's one lesson you learned from a mistake?",
+    "transcript_text": "I once shipped a change without testing it on real data, and it broke a report a client relied on. I learned that convenience now is not worth risk later. Since then I always test against a real sample before shipping, no matter how small the change feels. That single habit has saved me from repeating that mistake ever since.",
+    "duration_seconds": 48.0,
+    "word_count": 60,
+    "words_per_minute": 75.0,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Strong, clear conclusion sentence. Tests whether the coach can name a genuine conclusion strength (for the 'what worked' section) using the actual closing sentence as evidence.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-10",
+    "category": [
+      "fragmented_thought",
+      "restarts"
+    ],
+    "prompt": "Describe a project you're proud of.",
+    "transcript_text": "So the project was, well, it started as, I mean the original goal was to, actually let me start over. We built a dashboard. It was for, it was meant to help the support team see tickets faster, and it, it ended up cutting response time by a decent amount.",
+    "duration_seconds": 44.0,
+    "word_count": 50,
+    "words_per_minute": 68.2,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Multiple abandoned sentence starts and restarts, some possibly STT artifacts. Tests whether the coach hedges appropriately ('the transcript shows...') rather than stating restarts as directly-observed fact, per the Tier-4/imperfect-STT caveat.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-11",
+    "category": [
+      "concise_clear"
+    ],
+    "prompt": "What's your favorite way to unwind?",
+    "transcript_text": "I read fiction before bed. It's a clean break from screens and work. Twenty minutes is usually enough to reset my focus for the next day.",
+    "duration_seconds": 18.0,
+    "word_count": 26,
+    "words_per_minute": 86.7,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Short, concise, clear, on-topic answer well under the 60s target. Tests whether the coach avoids inventing a 'main improvement' just to fill the schema slot when the response is already solid and brief (a legitimate abstention/near-abstention boundary case).",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-12",
+    "category": [
+      "ambiguous_transcript",
+      "poor_stt"
+    ],
+    "prompt": "What's an important value to you?",
+    "transcript_text": "Honestly is is important to be, to be like, the the way you you treat people when when no one's watching that's kind of what I I believe in most most of the time.",
+    "duration_seconds": 30.0,
+    "word_count": 34,
+    "words_per_minute": 68.0,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Transcript shows word-level duplication patterns characteristic of STT stutter artifacts (docs/context.md 'Repetition smoothing' finding does not apply cleanly here \u2014 this case intentionally looks like an STT glitch, not necessarily real speech). Tests whether the coach treats this as unreliable evidence rather than confidently critiquing 'you repeat yourself a lot,' consistent with 'blindly trusting STT mistakes' in failure_taxonomy.md.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-13",
+    "category": [
+      "near_silence",
+      "insufficient_evidence"
+    ],
+    "prompt": "Tell me about a time you helped someone.",
+    "transcript_text": ".",
+    "duration_seconds": 13.1,
+    "word_count": 0,
+    "words_per_minute": 0.0,
+    "long_pauses": [],
+    "fillers": [],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Near-silence case, reused from the already-public real-human validation evidence (experiments/m6_speech_metrics/real_human_validation_results.md Test C) \u2014 punctuation-only transcript, all deterministic metrics correctly zero. This is the canonical abstention test case: the coach MUST output abstained:true, not generate feedback on effectively no evidence.",
+    "source": "real-human qualitative sample (transcript outcome only, no audio) \u2014 see experiments/m6_speech_metrics/real_human_validation_results.md Test C"
+  },
+  {
+    "id": "CASE-14",
+    "category": [
+      "conflicting_signals"
+    ],
+    "prompt": "What's a goal you're working toward?",
+    "transcript_text": "My goal is honestly, um, to run a half marathon this year, and, uh, I've, I've started training but, um, it's been, it's been harder than I, than I expected because, uh, work has been, um, really busy lately and, uh, finding time is, is the hard part, um, but I'm, I'm still going to, to try, uh, to keep at it.",
+    "duration_seconds": 22.0,
+    "word_count": 62,
+    "words_per_minute": 169.1,
+    "long_pauses": [
+      {
+        "previous_word_end": 5.0,
+        "next_word_start": 6.4,
+        "observed_gap": 1.4,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      }
+    ],
+    "fillers": [
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 1.0,
+        "end_time": 1.2
+      },
+      {
+        "text": "uh",
+        "category": "uh",
+        "start_time": 4.0,
+        "end_time": 4.2
+      },
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 8.5,
+        "end_time": 8.7
+      },
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 11.0,
+        "end_time": 11.2
+      },
+      {
+        "text": "uh",
+        "category": "uh",
+        "start_time": 14.5,
+        "end_time": 14.7
+      },
+      {
+        "text": "um",
+        "category": "um",
+        "start_time": 17.0,
+        "end_time": 17.2
+      },
+      {
+        "text": "uh",
+        "category": "uh",
+        "start_time": 19.5,
+        "end_time": 19.7
+      }
+    ],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Deliberately conflicting signals: very high WPM (fast word rate) AND heavy filler use AND a detected pause AND visible fragmentation/restarts, all at once. Tests prioritization (rubric D) \u2014 the coach must pick ONE main improvement, not enumerate all four issues.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-15",
+    "category": [
+      "single_filler_only",
+      "experimental_evidence_only"
+    ],
+    "prompt": "What's something you're currently curious about?",
+    "transcript_text": "I've been curious about how large language models handle ambiguous questions. It's, like, a genuinely interesting design problem because there's rarely one correct answer, and the way a system handles that uncertainty says a lot about its design priorities.",
+    "duration_seconds": 35.0,
+    "word_count": 39,
+    "words_per_minute": 66.9,
+    "long_pauses": [],
+    "fillers": [
+      {
+        "text": "like",
+        "category": "like",
+        "start_time": 8.0,
+        "end_time": 8.2
+      }
+    ],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Exactly one filler detection, everything else clean and well-structured. The single most important overreaction test: the coach must NOT make filler reduction the main improvement from one experimental detection (TECH-004's evidence bar is 3+). Also worth checking this 'like' is discourse-marker use, correctly detected, not semantic.",
+    "source": "synthetic (text fixture, no audio)"
+  },
+  {
+    "id": "CASE-16",
+    "category": [
+      "real_human_scripted",
+      "controlled_fillers_and_pauses"
+    ],
+    "prompt": "(Scripted read, not a live impromptu prompt \u2014 reproduced from committed validation evidence)",
+    "transcript_text": "Um, I think speaking clearly takes practice. My friend looks like her sister. Like, sometimes I lose my train of thought. Uh, then I try to continue. Actually, regular practice probably helps.",
+    "duration_seconds": 27.4,
+    "word_count": 32,
+    "words_per_minute": 70.1,
+    "long_pauses": [
+      {
+        "previous_word_end": 12.8,
+        "next_word_start": 14.1,
+        "observed_gap": 1.3,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      },
+      {
+        "previous_word_end": 14.6,
+        "next_word_start": 15.9,
+        "observed_gap": 1.3,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      },
+      {
+        "previous_word_end": 19.5,
+        "next_word_start": 21.1,
+        "observed_gap": 1.6,
+        "threshold": 1.0,
+        "method": "whisper_word_gap"
+      }
+    ],
+    "fillers": [
+      {
+        "text": "Um",
+        "category": "um",
+        "start_time": 0.0,
+        "end_time": 0.3
+      },
+      {
+        "text": "um (spoken uh)",
+        "category": "um",
+        "start_time": 15.9,
+        "end_time": 16.1
+      },
+      {
+        "text": "Actually",
+        "category": "actually",
+        "start_time": 21.1,
+        "end_time": 21.5
+      },
+      {
+        "text": "Like",
+        "category": "like",
+        "start_time": 9.0,
+        "end_time": 9.3
+      }
+    ],
+    "reliability": {
+      "duration_seconds": "exact",
+      "word_count": "approximate",
+      "words_per_minute": "approximate",
+      "long_pauses": "approximate",
+      "fillers": "experimental"
+    },
+    "design_note": "Reuses the exact scripted text and detection results already documented and committed in experiments/m6_speech_metrics/real_human_validation_results.md Test B. Real-human-derived evidence (not fabricated for this milestone), explicitly labeled per docs/privacy.md's experiment-privacy policy. Semantic 'looks like her sister' correctly NOT flagged. One pause event (~0:15) has no known intentional source per that document \u2014 tests whether the coach treats a possibly-spurious pause detection with appropriate caution rather than as confirmed ground truth.",
+    "source": "real-human qualitative sample (script + detections only, no audio) \u2014 see experiments/m6_speech_metrics/real_human_validation_results.md Test B"
+  }
+]

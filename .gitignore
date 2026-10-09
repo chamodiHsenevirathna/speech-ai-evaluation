@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# Audio and model artifacts: never committed (voice data, licensed weights, outputs)
+*.wav
+*.webm
+*.mp3
+*.m4a
+*.aiff
+*.ogg
+*.flac
+*.bin
+*.pt
+*.ckpt
+*.safetensors
+samples/
+data/raw/
+temp/
+raw_output/
+candidate_transcripts/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

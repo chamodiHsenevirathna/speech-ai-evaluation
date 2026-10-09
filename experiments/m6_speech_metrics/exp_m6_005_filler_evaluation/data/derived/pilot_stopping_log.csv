@@ -1,0 +1,2 @@
+recording_id,new_failure_category,stt_omission_pattern,detector_failure_pattern,ambiguous_event_count,qualitative_understanding_still_changing
+controlled_01,yes,observed,not evaluable - no downstream opportunity,0,yes

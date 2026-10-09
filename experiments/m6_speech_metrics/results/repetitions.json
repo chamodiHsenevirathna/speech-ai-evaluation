@@ -1,0 +1,108 @@
+[
+  {
+    "sample": "repetition_immediate",
+    "pattern": "immediate_repeated_bigram",
+    "expected_repetition": true,
+    "reference_script": "I think, I think we should leave now before the traffic gets worse.",
+    "transcript_text": "I think, I think we should leave now before the traffic gets worse.",
+    "transcript_matches_reference_script": true,
+    "detected_on_reference_script": {
+      "ngram_hits": [
+        {
+          "ngram": "i think",
+          "n": 2,
+          "position": 0
+        }
+      ],
+      "phrase_start_hits": [
+        {
+          "clause_a": "I think",
+          "clause_b": "I think we should leave now before the traffic gets worse",
+          "shared_start": "i think"
+        }
+      ],
+      "any_detected": true
+    },
+    "detected_on_transcript": {
+      "ngram_hits": [
+        {
+          "ngram": "i think",
+          "n": 2,
+          "position": 0
+        }
+      ],
+      "phrase_start_hits": [
+        {
+          "clause_a": "I think",
+          "clause_b": "I think we should leave now before the traffic gets worse",
+          "shared_start": "i think"
+        }
+      ],
+      "any_detected": true
+    },
+    "verdict": "correct"
+  },
+  {
+    "sample": "repetition_restart",
+    "pattern": "restart",
+    "expected_repetition": true,
+    "reference_script": "The main reason, the reason is that we ran out of time to finish properly.",
+    "transcript_text": "The main reason, the reason is that we ran out of time to finish properly.",
+    "transcript_matches_reference_script": true,
+    "detected_on_reference_script": {
+      "ngram_hits": [],
+      "phrase_start_hits": [],
+      "any_detected": false
+    },
+    "detected_on_transcript": {
+      "ngram_hits": [],
+      "phrase_start_hits": [],
+      "any_detected": false
+    },
+    "verdict": "missed_by_heuristic"
+  },
+  {
+    "sample": "repetition_none_clean",
+    "pattern": null,
+    "expected_repetition": false,
+    "reference_script": "We finished the project early and celebrated with the whole team that evening.",
+    "transcript_text": "We finished the project early and celebrated with the whole team that evening.",
+    "transcript_matches_reference_script": true,
+    "detected_on_reference_script": {
+      "ngram_hits": [],
+      "phrase_start_hits": [],
+      "any_detected": false
+    },
+    "detected_on_transcript": {
+      "ngram_hits": [],
+      "phrase_start_hits": [],
+      "any_detected": false
+    },
+    "verdict": "correct"
+  },
+  {
+    "sample": "repetition_word_stutter",
+    "pattern": "immediate_repeated_unigram",
+    "expected_repetition": true,
+    "reference_script": "So, um, I think the the best way to explain this is, uh, well, it's kind of complicated but let me try.",
+    "transcript_text": "So, um, I think the best way to explain this is, ah, well, it's kind of complicated but let me try.",
+    "transcript_matches_reference_script": false,
+    "detected_on_reference_script": {
+      "ngram_hits": [
+        {
+          "ngram": "the",
+          "n": 1,
+          "position": 4
+        }
+      ],
+      "phrase_start_hits": [],
+      "any_detected": true
+    },
+    "detected_on_transcript": {
+      "ngram_hits": [],
+      "phrase_start_hits": [],
+      "any_detected": false
+    },
+    "verdict": "erased_by_whisper_smoothing"
+  }
+]

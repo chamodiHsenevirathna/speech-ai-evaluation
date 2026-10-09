@@ -1,0 +1,2 @@
+recording_id,annotator_timestamp_sec,manually_heard_token,filler_type,classification,annotator_confidence,context_note,confounder_note
+controlled_01,0.1,um,um,discourse-filler,high,sentence initial,

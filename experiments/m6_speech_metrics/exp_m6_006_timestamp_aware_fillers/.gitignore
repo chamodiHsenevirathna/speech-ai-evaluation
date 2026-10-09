@@ -1,0 +1,3 @@
+# Test-runner artifacts from running test_candidate.py locally - not source.
+__pycache__/
+.pytest_cache/

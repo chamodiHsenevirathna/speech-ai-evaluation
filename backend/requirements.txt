@@ -1,0 +1,7 @@
+# Reduced dependency list for this repository (an extract of the SpeakLab backend).
+# Only what the included experiments and the extract's tests need.
+faster-whisper>=1.0,<2.0
+# faster-whisper 1.2.1 fails at transcription time with av 19 ("open() got an unexpected
+# keyword argument 'metadata_errors'"). The experiments were run with av 18.1.0.
+av<19
+pytest>=8.0,<9.0

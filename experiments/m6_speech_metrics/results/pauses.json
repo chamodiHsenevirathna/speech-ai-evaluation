@@ -1,0 +1,436 @@
+{
+  "approach_b_vad_probe": {
+    "status": "failed",
+    "error_type": "RuntimeError",
+    "error_message": "Applying the VAD filter requires the onnxruntime package",
+    "traceback_tail": [
+      "  File \"<repo>/backend/.venv/lib/python3.12/site-packages/faster_whisper/vad.py\", line 300, in __init__",
+      "    raise RuntimeError(",
+      "RuntimeError: Applying the VAD filter requires the onnxruntime package"
+    ]
+  },
+  "approach_a_results": [
+    {
+      "sample": "pause_0_5s",
+      "requested_pause_seconds": 0.5,
+      "known_pause_interval": [
+        2.521,
+        3.021
+      ],
+      "approach_a": {
+        "transcription_seconds": 1.055,
+        "all_gaps": [
+          {
+            "start": 2.0,
+            "end": 3.0,
+            "duration": 1.0
+          }
+        ],
+        "detected_pauses_by_threshold": {
+          "0.3": [
+            {
+              "start": 2.0,
+              "end": 3.0,
+              "duration": 1.0
+            }
+          ],
+          "0.5": [
+            {
+              "start": 2.0,
+              "end": 3.0,
+              "duration": 1.0
+            }
+          ],
+          "0.75": [
+            {
+              "start": 2.0,
+              "end": 3.0,
+              "duration": 1.0
+            }
+          ],
+          "1.0": [
+            {
+              "start": 2.0,
+              "end": 3.0,
+              "duration": 1.0
+            }
+          ],
+          "1.5": [],
+          "2.0": []
+        }
+      },
+      "threshold_verdicts": {
+        "0.3": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.75": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.5": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": false,
+          "false_positive_on_control": null
+        },
+        "2.0": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": false,
+          "false_positive_on_control": null
+        }
+      }
+    },
+    {
+      "sample": "pause_1_0s",
+      "requested_pause_seconds": 1.0,
+      "known_pause_interval": [
+        2.521,
+        3.521
+      ],
+      "approach_a": {
+        "transcription_seconds": 1.013,
+        "all_gaps": [
+          {
+            "start": 2.0,
+            "end": 3.16,
+            "duration": 1.16
+          }
+        ],
+        "detected_pauses_by_threshold": {
+          "0.3": [
+            {
+              "start": 2.0,
+              "end": 3.16,
+              "duration": 1.16
+            }
+          ],
+          "0.5": [
+            {
+              "start": 2.0,
+              "end": 3.16,
+              "duration": 1.16
+            }
+          ],
+          "0.75": [
+            {
+              "start": 2.0,
+              "end": 3.16,
+              "duration": 1.16
+            }
+          ],
+          "1.0": [
+            {
+              "start": 2.0,
+              "end": 3.16,
+              "duration": 1.16
+            }
+          ],
+          "1.5": [],
+          "2.0": []
+        }
+      },
+      "threshold_verdicts": {
+        "0.3": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.75": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.5": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": false,
+          "false_positive_on_control": null
+        },
+        "2.0": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": false,
+          "false_positive_on_control": null
+        }
+      }
+    },
+    {
+      "sample": "pause_2_0s",
+      "requested_pause_seconds": 2.0,
+      "known_pause_interval": [
+        2.521,
+        4.521
+      ],
+      "approach_a": {
+        "transcription_seconds": 1.09,
+        "all_gaps": [
+          {
+            "start": 2.0,
+            "end": 4.52,
+            "duration": 2.52
+          }
+        ],
+        "detected_pauses_by_threshold": {
+          "0.3": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ],
+          "0.5": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ],
+          "0.75": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ],
+          "1.0": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ],
+          "1.5": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ],
+          "2.0": [
+            {
+              "start": 2.0,
+              "end": 4.52,
+              "duration": 2.52
+            }
+          ]
+        }
+      },
+      "threshold_verdicts": {
+        "0.3": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.75": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "2.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        }
+      }
+    },
+    {
+      "sample": "pause_3_0s",
+      "requested_pause_seconds": 3.0,
+      "known_pause_interval": [
+        2.521,
+        5.521
+      ],
+      "approach_a": {
+        "transcription_seconds": 1.223,
+        "all_gaps": [
+          {
+            "start": 1.94,
+            "end": 5.04,
+            "duration": 3.1
+          }
+        ],
+        "detected_pauses_by_threshold": {
+          "0.3": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ],
+          "0.5": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ],
+          "0.75": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ],
+          "1.0": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ],
+          "1.5": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ],
+          "2.0": [
+            {
+              "start": 1.94,
+              "end": 5.04,
+              "duration": 3.1
+            }
+          ]
+        }
+      },
+      "threshold_verdicts": {
+        "0.3": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "0.75": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "1.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        },
+        "2.0": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": true,
+          "false_positive_on_control": null
+        }
+      }
+    },
+    {
+      "sample": "pause_control_0s",
+      "requested_pause_seconds": 0.0,
+      "known_pause_interval": [
+        2.521,
+        2.521
+      ],
+      "approach_a": {
+        "transcription_seconds": 1.128,
+        "all_gaps": [
+          {
+            "start": 1.96,
+            "end": 2.46,
+            "duration": 0.5
+          }
+        ],
+        "detected_pauses_by_threshold": {
+          "0.3": [
+            {
+              "start": 1.96,
+              "end": 2.46,
+              "duration": 0.5
+            }
+          ],
+          "0.5": [
+            {
+              "start": 1.96,
+              "end": 2.46,
+              "duration": 0.5
+            }
+          ],
+          "0.75": [],
+          "1.0": [],
+          "1.5": [],
+          "2.0": []
+        }
+      },
+      "threshold_verdicts": {
+        "0.3": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": true
+        },
+        "0.5": {
+          "flagged_count": 1,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": true
+        },
+        "0.75": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": false
+        },
+        "1.0": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": false
+        },
+        "1.5": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": false
+        },
+        "2.0": {
+          "flagged_count": 0,
+          "correctly_flags_known_pause": null,
+          "false_positive_on_control": false
+        }
+      }
+    }
+  ]
+}

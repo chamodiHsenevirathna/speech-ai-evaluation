@@ -1,0 +1,62 @@
+[
+  {
+    "name": "filler_um_uh",
+    "text": "So, um, I think the the best way to explain this is, uh, well, it's kind of complicated but let me try.",
+    "expected_fillers": [
+      "um",
+      "uh"
+    ],
+    "notes": "Same script as M5 natural_fillers.webm - reused for consistency, not regenerated identically (new TTS render)."
+  },
+  {
+    "name": "filler_like_discourse",
+    "text": "Like, I don't really know what to say about that, it's kind of hard to explain.",
+    "expected_fillers": [
+      "like"
+    ],
+    "notes": "Sentence-initial 'Like,' functioning as a discourse-marker filler, not a comparison."
+  },
+  {
+    "name": "filler_like_semantic",
+    "text": "She looks like her sister in almost every way.",
+    "expected_fillers": [],
+    "notes": "'like' used as a genuine comparison/preposition - must NOT be counted as filler."
+  },
+  {
+    "name": "filler_actually_hedge",
+    "text": "So, actually, um, I forgot what I was going to say.",
+    "expected_fillers": [
+      "actually",
+      "um"
+    ],
+    "notes": "'actually' used as a hedge/filler alongside 'um', not asserting a fact."
+  },
+  {
+    "name": "filler_actually_semantic",
+    "text": "The report was actually completed a week ahead of schedule.",
+    "expected_fillers": [],
+    "notes": "'actually' used semantically (asserting a surprising fact) - must NOT be counted as filler."
+  },
+  {
+    "name": "filler_basically",
+    "text": "Basically, we just need to finish the last section before Friday.",
+    "expected_fillers": [
+      "basically"
+    ],
+    "notes": "Sentence-initial discourse-marker use."
+  },
+  {
+    "name": "filler_you_know",
+    "text": "It was, you know, kind of a weird situation for all of us.",
+    "expected_fillers": [
+      "you know"
+    ],
+    "notes": "Multi-word filler phrase."
+  },
+  {
+    "name": "filler_none_clean",
+    "text": "The weather today is sunny with a light breeze, and it is a perfect afternoon for a walk.",
+    "expected_fillers": [],
+    "notes": "Clean fluent control sentence - no fillers, checks for false positives."
+  }
+]

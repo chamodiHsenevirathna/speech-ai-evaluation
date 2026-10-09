@@ -1,0 +1,11 @@
+candidate,sample,model_size,device,compute_type,audio_duration_seconds,transcription_seconds,real_time_factor,transcript_text,segment_count,has_timestamps,word_error_rate,reference_filler_count,transcript_filler_count,approx_model_footprint_mb
+tiny.en-cpu-int8,clear_speech,tiny.en,cpu,int8,5.61,1.06,0.189,"The weather today is sunny with a light breeze, and I think it's a perfect afternoon for a walk in the park.",2,True,0.0,0,0,
+tiny.en-cpu-int8,conversational_pace,tiny.en,cpu,int8,15.59,1.3,0.083,"Last year I had to make a decision quickly when my flight got cancelled. I only had a few minutes to decide whether to re-book or take a bus instead, so I just went with my gut and booked the next available flight. It worked out fine in the end, but it was definitely a stressful moment.",4,True,0.035,0,0,
+tiny.en-cpu-int8,hesitation_restart,tiny.en,cpu,int8,8.88,1.09,0.123,"I wanted to talk about, I wanted to talk about my favorite hobby, which is, actually, let me start over, my favorite hobby is painting.",2,True,0.0,0,0,
+tiny.en-cpu-int8,natural_fillers,tiny.en,cpu,int8,7.35,0.87,0.119,"So, um, I think that the best way to explain this is, ah, well, it's kind of complicated but let me try.",2,True,0.091,2,1,
+tiny.en-cpu-int8,near_silent,tiny.en,cpu,int8,3.0,0.49,0.164,You,1,True,,0,0,
+base.en-cpu-int8,clear_speech,base.en,cpu,int8,5.61,1.08,0.192,"The weather today is sunny with a light breeze, and I think it's a perfect afternoon for a walk in the park.",2,True,0.0,0,0,
+base.en-cpu-int8,conversational_pace,base.en,cpu,int8,15.59,1.93,0.124,"Last year I had to make a decision quickly when my flight got cancelled, I only had a few minutes to decide whether to re-book or take a bus instead, so I just went with my gut and booked the next available flight. It worked out fine in the end, but it was definitely a stressful moment.",4,True,0.035,0,0,
+base.en-cpu-int8,hesitation_restart,base.en,cpu,int8,8.88,1.15,0.13,"I wanted to talk about, I wanted to talk about my favorite hobby, which is, actually, let me start over, my favorite hobby is painting.",2,True,0.0,0,0,
+base.en-cpu-int8,natural_fillers,base.en,cpu,int8,7.35,1.12,0.152,"So, um, I think the best way to explain this is, ah, well, it's kind of complicated but let me try.",2,True,0.091,2,1,
+base.en-cpu-int8,near_silent,base.en,cpu,int8,3.0,0.69,0.229,You,1,True,,0,0,

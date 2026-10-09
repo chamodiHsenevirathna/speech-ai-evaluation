@@ -1,0 +1,392 @@
+{
+  "per_sample": [
+    {
+      "sample": "filler_um_uh",
+      "reference_text": "So, um, I think the the best way to explain this is, uh, well, it's kind of complicated but let me try.",
+      "transcript_text": "So, um, I think the best way to explain this is, ah, well, it's kind of complicated but let me try.",
+      "expected_fillers": [
+        "um",
+        "uh"
+      ],
+      "vocab_items_present_in_transcript": [
+        "ah",
+        "um"
+      ],
+      "baseline_a_counts": {
+        "um": 1,
+        "uh": 0,
+        "ah": 1,
+        "erm": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 1,
+        "uh": 0,
+        "ah": 1,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      },
+      "baseline_b_scoring": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    {
+      "sample": "filler_like_discourse",
+      "reference_text": "Like, I don't really know what to say about that, it's kind of hard to explain.",
+      "transcript_text": "Like, I don't really know what to say about that, it's kind of hard to explain.",
+      "expected_fillers": [
+        "like"
+      ],
+      "vocab_items_present_in_transcript": [
+        "like"
+      ],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 1,
+        "actually": 0,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 1,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "baseline_b_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "sample": "filler_like_semantic",
+      "reference_text": "She looks like her sister in almost every way.",
+      "transcript_text": "She looks like her sister in almost every way.",
+      "expected_fillers": [],
+      "vocab_items_present_in_transcript": [
+        "like"
+      ],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 1,
+        "actually": 0,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null
+      },
+      "baseline_b_scoring": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "sample": "filler_actually_hedge",
+      "reference_text": "So, actually, um, I forgot what I was going to say.",
+      "transcript_text": "So, actually, um, I forgot what I was going to say.",
+      "expected_fillers": [
+        "actually",
+        "um"
+      ],
+      "vocab_items_present_in_transcript": [
+        "actually",
+        "um"
+      ],
+      "baseline_a_counts": {
+        "um": 1,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 0,
+        "actually": 1,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 1,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "baseline_b_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666
+      }
+    },
+    {
+      "sample": "filler_actually_semantic",
+      "reference_text": "The report was actually completed a week ahead of schedule.",
+      "transcript_text": "The report was actually completed a week ahead of schedule.",
+      "expected_fillers": [],
+      "vocab_items_present_in_transcript": [
+        "actually"
+      ],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 0,
+        "actually": 1,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null
+      },
+      "baseline_b_scoring": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    {
+      "sample": "filler_basically",
+      "reference_text": "Basically, we just need to finish the last section before Friday.",
+      "transcript_text": "Basically, we just need to finish the last section before Friday.",
+      "expected_fillers": [
+        "basically"
+      ],
+      "vocab_items_present_in_transcript": [
+        "basically"
+      ],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 1,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 1
+      },
+      "baseline_a_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "baseline_b_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "sample": "filler_you_know",
+      "reference_text": "It was, you know, kind of a weird situation for all of us.",
+      "transcript_text": "It was, you know, kind of a weird situation for all of us.",
+      "expected_fillers": [
+        "you know"
+      ],
+      "vocab_items_present_in_transcript": [
+        "you know"
+      ],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0,
+        "you know": 1
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 1,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "baseline_b_scoring": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    {
+      "sample": "filler_none_clean",
+      "reference_text": "The weather today is sunny with a light breeze, and it is a perfect afternoon for a walk.",
+      "transcript_text": "The weather today is sunny with a light breeze, and it is a perfect afternoon for a walk.",
+      "expected_fillers": [],
+      "vocab_items_present_in_transcript": [],
+      "baseline_a_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0,
+        "you know": 0
+      },
+      "baseline_b_counts": {
+        "um": 0,
+        "uh": 0,
+        "ah": 0,
+        "erm": 0,
+        "you know": 0,
+        "like": 0,
+        "actually": 0,
+        "basically": 0
+      },
+      "baseline_a_scoring": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "baseline_b_scoring": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    }
+  ],
+  "aggregate_baseline_a": {
+    "tp": 6,
+    "fp": 3,
+    "fn": 0,
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1": 0.8
+  },
+  "aggregate_baseline_b": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.8333333333333334,
+    "recall": 0.8333333333333334,
+    "f1": 0.8333333333333334
+  }
+}

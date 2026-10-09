@@ -1,0 +1,30 @@
+[
+  {
+    "name": "repetition_immediate",
+    "text": "I think, I think we should leave now before the traffic gets worse.",
+    "expected_repetition": true,
+    "pattern": "immediate_repeated_bigram",
+    "notes": "'I think, I think' - immediate exact repeat of a short phrase."
+  },
+  {
+    "name": "repetition_restart",
+    "text": "The main reason, the reason is that we ran out of time to finish properly.",
+    "expected_repetition": true,
+    "pattern": "restart",
+    "notes": "'The main reason... the reason is' - restart with partial phrase overlap, not an exact repeat."
+  },
+  {
+    "name": "repetition_none_clean",
+    "text": "We finished the project early and celebrated with the whole team that evening.",
+    "expected_repetition": false,
+    "pattern": null,
+    "notes": "Clean control sentence - no repetition, checks for false positives."
+  },
+  {
+    "name": "repetition_word_stutter",
+    "text": "So, um, I think the the best way to explain this is, uh, well, it's kind of complicated but let me try.",
+    "expected_repetition": true,
+    "pattern": "immediate_repeated_unigram",
+    "notes": "'the the' - single-word stutter. Same script as filler_um_uh; M5 already found Whisper sometimes smooths this away (conclusions.md 'Repetition smoothing')."
+  }
+]

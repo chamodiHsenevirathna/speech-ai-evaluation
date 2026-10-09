@@ -1,0 +1,67 @@
+[
+  {
+    "name": "pause_0_5s",
+    "phrase1": "I think the first point is really important.",
+    "phrase2": "The second point builds on that idea.",
+    "requested_pause_seconds": 0.5,
+    "measured_phrase1_duration": 2.521,
+    "measured_phrase2_duration": 2.073,
+    "known_pause_interval": [
+      2.521,
+      3.021
+    ],
+    "full_text": "I think the first point is really important. The second point builds on that idea."
+  },
+  {
+    "name": "pause_1_0s",
+    "phrase1": "I think the first point is really important.",
+    "phrase2": "The second point builds on that idea.",
+    "requested_pause_seconds": 1.0,
+    "measured_phrase1_duration": 2.521,
+    "measured_phrase2_duration": 2.073,
+    "known_pause_interval": [
+      2.521,
+      3.521
+    ],
+    "full_text": "I think the first point is really important. The second point builds on that idea."
+  },
+  {
+    "name": "pause_2_0s",
+    "phrase1": "I think the first point is really important.",
+    "phrase2": "The second point builds on that idea.",
+    "requested_pause_seconds": 2.0,
+    "measured_phrase1_duration": 2.521,
+    "measured_phrase2_duration": 2.073,
+    "known_pause_interval": [
+      2.521,
+      4.521
+    ],
+    "full_text": "I think the first point is really important. The second point builds on that idea."
+  },
+  {
+    "name": "pause_3_0s",
+    "phrase1": "I think the first point is really important.",
+    "phrase2": "The second point builds on that idea.",
+    "requested_pause_seconds": 3.0,
+    "measured_phrase1_duration": 2.521,
+    "measured_phrase2_duration": 2.073,
+    "known_pause_interval": [
+      2.521,
+      5.521
+    ],
+    "full_text": "I think the first point is really important. The second point builds on that idea."
+  },
+  {
+    "name": "pause_control_0s",
+    "phrase1": "I think the first point is really important.",
+    "phrase2": "The second point builds on that idea.",
+    "requested_pause_seconds": 0.0,
+    "measured_phrase1_duration": 2.521,
+    "measured_phrase2_duration": 2.073,
+    "known_pause_interval": [
+      2.521,
+      2.521
+    ],
+    "full_text": "I think the first point is really important. The second point builds on that idea."
+  }
+]

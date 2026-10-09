@@ -1,0 +1,227 @@
+[
+  {
+    "sample": "clear_speech",
+    "segment_level": {
+      "transcription_seconds": 0.945,
+      "real_time_factor": 0.1685,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.201,
+      "real_time_factor": 0.2141,
+      "word_count": 22
+    },
+    "latency_overhead_percent": 27.1,
+    "transcript_text_identical": true,
+    "transcript_text": "The weather today is sunny with a light breeze, and I think it's a perfect afternoon for a walk in the park."
+  },
+  {
+    "sample": "conversational_pace",
+    "segment_level": {
+      "transcription_seconds": 1.831,
+      "real_time_factor": 0.1175,
+      "segment_count": 4
+    },
+    "word_level": {
+      "transcription_seconds": 1.887,
+      "real_time_factor": 0.1211,
+      "word_count": 58
+    },
+    "latency_overhead_percent": 3.1,
+    "transcript_text_identical": true,
+    "transcript_text": "Last year I had to make a decision quickly when my flight got cancelled, I only had a few minutes to decide whether to re-book or take a bus instead, so I just went with my gut and booked the next available flight. It worked out fine in the end, but it was definitely a stressful moment."
+  },
+  {
+    "sample": "hesitation_restart",
+    "segment_level": {
+      "transcription_seconds": 1.219,
+      "real_time_factor": 0.1374,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.329,
+      "real_time_factor": 0.1497,
+      "word_count": 25
+    },
+    "latency_overhead_percent": 9.0,
+    "transcript_text_identical": true,
+    "transcript_text": "I wanted to talk about, I wanted to talk about my favorite hobby, which is, actually, let me start over, my favorite hobby is painting."
+  },
+  {
+    "sample": "natural_fillers",
+    "segment_level": {
+      "transcription_seconds": 1.147,
+      "real_time_factor": 0.1561,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.218,
+      "real_time_factor": 0.1657,
+      "word_count": 21
+    },
+    "latency_overhead_percent": 6.2,
+    "transcript_text_identical": true,
+    "transcript_text": "So, um, I think the best way to explain this is, ah, well, it's kind of complicated but let me try."
+  },
+  {
+    "sample": "near_silent",
+    "segment_level": {
+      "transcription_seconds": 0.709,
+      "real_time_factor": 0.2362,
+      "segment_count": 1
+    },
+    "word_level": {
+      "transcription_seconds": 0.721,
+      "real_time_factor": 0.2402,
+      "word_count": 1
+    },
+    "latency_overhead_percent": 1.7,
+    "transcript_text_identical": true,
+    "transcript_text": "You"
+  },
+  {
+    "sample": "pause_0_5s",
+    "segment_level": {
+      "transcription_seconds": 1.045,
+      "real_time_factor": 0.2051,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.014,
+      "real_time_factor": 0.199,
+      "word_count": 15
+    },
+    "latency_overhead_percent": -3.0,
+    "transcript_text_identical": true,
+    "transcript_text": "I think the first point is really important. The second point builds on that idea.",
+    "pause_localization": {
+      "known_pause_interval": [
+        2.521,
+        3.021
+      ],
+      "requested_pause_seconds": 0.5,
+      "largest_detected_word_gap": {
+        "gap": 1.0,
+        "start": 2.0,
+        "end": 3.0
+      },
+      "gap_overlaps_known_interval": true
+    }
+  },
+  {
+    "sample": "pause_1_0s",
+    "segment_level": {
+      "transcription_seconds": 1.088,
+      "real_time_factor": 0.1945,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.056,
+      "real_time_factor": 0.1888,
+      "word_count": 15
+    },
+    "latency_overhead_percent": -2.9,
+    "transcript_text_identical": true,
+    "transcript_text": "I think the first point is really important. The second point builds on that idea.",
+    "pause_localization": {
+      "known_pause_interval": [
+        2.521,
+        3.521
+      ],
+      "requested_pause_seconds": 1.0,
+      "largest_detected_word_gap": {
+        "gap": 1.16,
+        "start": 2.0,
+        "end": 3.16
+      },
+      "gap_overlaps_known_interval": true
+    }
+  },
+  {
+    "sample": "pause_2_0s",
+    "segment_level": {
+      "transcription_seconds": 1.025,
+      "real_time_factor": 0.1554,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.012,
+      "real_time_factor": 0.1534,
+      "word_count": 15
+    },
+    "latency_overhead_percent": -1.3,
+    "transcript_text_identical": true,
+    "transcript_text": "I think the first point is really important. The second point builds on that idea.",
+    "pause_localization": {
+      "known_pause_interval": [
+        2.521,
+        4.521
+      ],
+      "requested_pause_seconds": 2.0,
+      "largest_detected_word_gap": {
+        "gap": 2.52,
+        "start": 2.0,
+        "end": 4.52
+      },
+      "gap_overlaps_known_interval": true
+    }
+  },
+  {
+    "sample": "pause_3_0s",
+    "segment_level": {
+      "transcription_seconds": 0.94,
+      "real_time_factor": 0.1238,
+      "segment_count": 2
+    },
+    "word_level": {
+      "transcription_seconds": 1.084,
+      "real_time_factor": 0.1428,
+      "word_count": 15
+    },
+    "latency_overhead_percent": 15.3,
+    "transcript_text_identical": true,
+    "transcript_text": "I think the first point is really important. The second point builds on that idea.",
+    "pause_localization": {
+      "known_pause_interval": [
+        2.521,
+        5.521
+      ],
+      "requested_pause_seconds": 3.0,
+      "largest_detected_word_gap": {
+        "gap": 3.1,
+        "start": 1.94,
+        "end": 5.04
+      },
+      "gap_overlaps_known_interval": true
+    }
+  },
+  {
+    "sample": "pause_control_0s",
+    "segment_level": {
+      "transcription_seconds": 0.851,
+      "real_time_factor": 0.1852,
+      "segment_count": 1
+    },
+    "word_level": {
+      "transcription_seconds": 1.019,
+      "real_time_factor": 0.2217,
+      "word_count": 15
+    },
+    "latency_overhead_percent": 19.7,
+    "transcript_text_identical": true,
+    "transcript_text": "I think the first point is really important, the second point builds on that idea.",
+    "pause_localization": {
+      "known_pause_interval": [
+        2.521,
+        2.521
+      ],
+      "requested_pause_seconds": 0.0,
+      "largest_detected_word_gap": {
+        "gap": 0.5,
+        "start": 1.96,
+        "end": 2.46
+      },
+      "gap_overlaps_known_interval": false
+    }
+  }
+]
